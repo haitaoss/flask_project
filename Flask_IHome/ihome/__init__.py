@@ -3,10 +3,10 @@ from config import config_map
 from flask_sqlalchemy import SQLAlchemy
 from flask_session import Session
 from flask_wtf import CSRFProtect
-
 import redis
 import logging
 from logging.handlers import RotatingFileHandler
+from ihome.utils.commons import ReConverter
 
 # 这里不在创建app的时候在创建，是因为，views.py还有models.py在导入的时候就需要，防止找不到
 
@@ -61,8 +61,13 @@ def create_app(config_name):
 
     # 为flask补充csrf防护
     CSRFProtect(app)
-
+    # 为flask添加自定义的转换器
+    app.url_map.converters["re"] = ReConverter
     # 注册蓝图
     from ihome import api_1_0  # 放在这里是为了解决循环导入的问题
     app.register_blueprint(api_1_0.api, url_prefix='/api/v1.0')
+    # 注册提供静态文件的蓝图
+    from ihome.web_html import html
+    app.register_blueprint(html)
+
     return app
