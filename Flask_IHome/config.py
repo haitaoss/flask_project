@@ -5,9 +5,10 @@ class Config(object):
     """配置信息"""
 
     SECRET_KEY = 'SADJF1229*&^*^#SLDFAKDS'
-
+    import pymysql
+    pymysql.install_as_MySQLdb()
     # 数据库
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@127.0.0.1:3306/flaks_ihome'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@127.0.0.1:3306/flask_ihome'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     # reids

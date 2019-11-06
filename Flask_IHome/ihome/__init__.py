@@ -25,7 +25,8 @@ redis_store = None
 
 # 配置日志信息
 # 设置日志的记录等级
-logging.basicConfig(level=logging.DEBUG)  # 调试debug级
+# 如果flask项目的运行模式是DEBUG=True那么这里的配置是无效的。flask会把它设置成debug模型
+logging.basicConfig(level=logging.ERROR)  # 调试debug级
 # 创建日志记录器，指明日志保存的路径、每个日志文件的最大大小、保存的日志文件个数上限
 file_log_handler = RotatingFileHandler("logs/log", maxBytes=1024 * 1024 * 100, backupCount=10)
 # 创建日志记录的格式                 日志等级    输入日志信息的文件名 行数    日志信息
