@@ -35,4 +35,3 @@ def get_html(html_file_name):
     # 响应到客户端
     return resp
 
-    return

@@ -53,8 +53,7 @@ def create_app(config_name):
 
     # 初始化redis工具
     global redis_store
-    redis_store = redis.StrictRedis(host=app.config.get('REDIS_HOST'), port=app.config.get('REDIS_PORT'),
-                                    db=app.config.get('REDIS_DB'))
+    redis_store = redis.StrictRedis(host=app.config.get('REDIS_HOST'), port=app.config.get('REDIS_PORT'))
 
     # 利用flask_session，修改flask保存session信息的机制
     Session(app)

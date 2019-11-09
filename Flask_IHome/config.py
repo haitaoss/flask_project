@@ -14,10 +14,9 @@ class Config(object):
     # reids
     REDIS_HOST = '127.0.0.1'
     REDIS_PORT = 6379
-    REDIS_DB = 10
     # flask_session
     SESSION_TYPE = 'redis'  # 用作保存session的类型
-    SESSION_REDIS = redis.StrictRedis(host='127.0.0.1', port=6379, db=9)  # redis实例
+    SESSION_REDIS = redis.StrictRedis(host='127.0.0.1', port=6379, db=2)  # redis实例
     SESSION_USE_SIGNER = True  # 对cookie中的session_id进行加密处理
     PERMANENT_SESSION_LIFETIME = 3600 * 24  # session数据的有效期，单位秒
 
