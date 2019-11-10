@@ -1,6 +1,6 @@
 from ihome import db
 from datetime import datetime
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 class BaseModel(object):
@@ -49,6 +49,15 @@ class User(BaseModel, db.Model):
         """设置属性的函数行为"""
         # 对密码进行加密
         self.password_hash = generate_password_hash(value)
+
+
+    def check_password(self, passwd):
+        """
+        检验密码的正确性
+        :param passwd: 用户登录时填写的原始密码
+        :return: 正确返回True,错误返回False
+        """
+        return check_password_hash(self.password_hash, passwd)
 
 
 class Area(BaseModel, db.Model):

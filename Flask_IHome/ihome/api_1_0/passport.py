@@ -6,7 +6,7 @@ from ihome.utils.response_code import RET
 from ihome import redis_store, db
 from ihome.models import User
 from sqlalchemy.exc import IntegrityError  # 重复键异常
-from werkzeug.security import generate_password_hash, check_password_hash
+from ihome import constants
 import re
 
 
@@ -55,7 +55,7 @@ def register():
     except Exception as e:
         current_app.logger.error(e)
 
-    print(real_sms_code,sms_code)
+    print(real_sms_code, sms_code)
 
     # 判断用户填写的短信验证码的正确性
     if real_sms_code != sms_code:
@@ -89,3 +89,85 @@ def register():
     session["user_id"] = user.id
     # 返回应答
     return jsonify(errno=RET.OK, errmsg="注册成功")
+
+
+@api.route("/sessions", methods=["POST"])
+def login():
+    """
+    用户登录
+    参数：手机号，密码
+    :return:
+    """
+
+    # 提取参数
+    req_dict = request.get_json()
+    mobile = req_dict.get("mobile")
+    password = req_dict.get("password")
+    # 校验参数
+    # 参数完整性校验
+    if not all([mobile, password]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不完整")
+    # 校验手机号的格式
+    if not re.match(r"1[34578]\d{9}", mobile):
+        return jsonify(errno=RET.PARAMERR, errmsg="请输入正确的手机号")
+
+    # 判断错误次数是超过限制，如果超过限制，则返回
+    # redis记录："access_nums_请求的ip地址":"次数"
+    user_ip = request.remote_addr  # 用户的ip地址
+    try:
+        access_nums = redis_store.get("access_nums_%s" % user_ip)
+    except Exception as e:
+        current_app.logger.error(e)
+    else:
+        if access_nums is not None and int(access_nums) >= constants.LOGIN_ERROR_MAX_TIMES:
+            return jsonify(errno=RET.REQERR, errmsg="错误次数过多，请稍后重试")
+
+    # 业务处理
+    # 从数据库中，根据手机号查询用户的数据对象
+    try:
+        user = User.query.filter_by(mobile=mobile).first()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据库异常")
+
+    # 细节，为了防止，别人暴力破解，不要暴露具体的错误信息。
+    # 从数据库的密码与用户填写的密码进行对比校验
+    if user is None or not user.check_password(password):
+        # 记录错误次数
+        try:
+            # redis的incr ，加一操作
+            redis_store.incr("access_nums_%s" % user_ip)
+            # 设置有效期
+            redis_store.expire("access_nums_%s" % user_ip, constants.LOGIN_ERROR_FORBID_TIME)
+        except Exception as e:
+            current_app.logger.error(e)
+        #  如果验证失败，记录错误次数，返回信息
+        return jsonify(errno=RET.DATAERR, errmsg="用户名或者密码错误")
+
+    # 如果验证相同，保存登录状态，在session中
+    session["name"] = user.name
+    session["mobile"] = user.mobile
+    session["user_id"] = user.id
+    return jsonify(errno=RET.OK, errmsg="登录成功")
+
+
+@api.route("/session", methods=["GET"])
+def check_login():
+    """检查登录状态"""
+
+    # 尝试从session获取用户的名字
+    name = session.get("name")
+    if name:
+        return jsonify(errno=RET.OK, errmsg="True", data={"name": name})
+    else:
+        return jsonify(errno=RET.SESSIONERR, errmsg="False")
+
+
+@api.route("/session", methods=["DELETE"])
+def logout():
+    """登出"""
+    # 因为，浏览器访问的时候，会把cookie都传送过来
+    # 这个时候，我们就获取了这个浏览器对应的session_id，
+    # 所以这里的clear是清除这个sessin_id的信息，不会把别人的清除掉
+    session.clear()
+    return jsonify(errno=RET.OK, errmsg="OK")
