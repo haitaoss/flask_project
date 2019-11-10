@@ -1,5 +1,6 @@
 from ihome import db
 from datetime import datetime
+from werkzeug.security import generate_password_hash
 
 
 class BaseModel(object):
@@ -23,6 +24,31 @@ class User(BaseModel, db.Model):
     avatar_url = db.Column(db.String(128))  # 用户头像路径
     houses = db.relationship("House", backref="user")  # 用户发布的房屋
     orders = db.relationship("Order", backref="user")  # 用户下的订单
+
+    # user.password   user.password="xxx" 会调用下面的两个装饰器函数
+
+    # 加上property装饰器后，会把函数变为属性，属性名为函数名
+    @property  # 把方法当成属性来使用
+    def password(self):
+        """读取属性的函数行为"""
+        # print(user.password)  读取属性时会被调用
+        # 函数的返回值，会作为属性值
+        # return "xxx"
+        # 因为读取出来的是加密之后的东西，拿来没有任何意义，所以就别读取了
+        raise AttributeError("这个属性只能设置，不能读取")
+
+    # 给我们的password属性添加设置属性的方法，所以先使用@property创建出是函数的属性
+    # 使用这个装饰器，对应设置属性的操作
+    @password.setter
+    def password(self, value):
+        """
+        设置属性 usre.password = "xxx"
+        :param value: 设置属性时的数据 value 就是”xxx“,原始的明文密码
+        :return:
+        """
+        """设置属性的函数行为"""
+        # 对密码进行加密
+        self.password_hash = generate_password_hash(value)
 
 
 class Area(BaseModel, db.Model):

@@ -1,4 +1,6 @@
+//js读取cookie的方法
 function getCookie(name) {
+    // \b是单词边界
     var r = document.cookie.match("\\b" + name + "=([^;]*)\\b");
     return r ? r[1] : undefined;
 }
@@ -48,11 +50,17 @@ function sendSMSCode() {
         return;
     }
     // 向后端发送请求
-    $.get("/api/v1.0/sms_codes/" + mobile, {image_code: imageCode, image_code_id: imageCodeId},
+    $.get("/api/v1.0/sms_codes/" + mobile + "?id=", {image_code: imageCode, image_code_id: imageCodeId},
         function (data) {
             // data 是后端返回的响应值，因为后端返回的是json字符串
             // 所以ajax帮助我们把这个json字符串转换为js对象，data就是转换后的对象
-            if (0 != data.errno) {
+            if (data.errno == "4002") {
+                //验证码失效，所以刷新一下验证码
+                $(".phonecode-a").attr("onclick", "sendSMSCode();");
+                generateImageCode();
+            } else if (data.errno == "4201") {
+                // 说明发送短信的请求过于频繁
+                alert(data.errmsg);
                 var num = 60;
                 // 表示发送信息
                 var timer = setInterval(function () {
@@ -67,9 +75,9 @@ function sendSMSCode() {
                     num -= 1;
 
                 }, 1000, 60);//没1000毫秒执行一次，执行60秒
-
             } else {
                 alert(data.errmsg);
+                generateImageCode();
                 $(".phonecode-a").attr("onclick", "sendSMSCode();");
             }
         }, 'json');
@@ -93,7 +101,11 @@ $(document).ready(function () {
     $("#password2").focus(function () {
         $("#password2-err").hide();
     });
+
+    // 为表单的提交补充自定义的函数行为     （提交事件e）
     $(".form-register").submit(function (e) {
+
+        // 阻止浏览器对于表单的默认自动提交行为
         e.preventDefault();
         mobile = $("#mobile").val();
         phoneCode = $("#phonecode").val();
@@ -119,5 +131,36 @@ $(document).ready(function () {
             $("#password2-err").show();
             return;
         }
+
+        //调用ajax向后端发送注册请求
+        var req_data = {
+            mobile: mobile,
+            sms_code: phoneCode,
+            password: passwd,
+            password2: passwd2,
+
+        };
+        // 将json对象变成json字符串。使用原始ajax发送json数据，必须是json字符串
+        // 否则执行ajax代码的时候会出错
+        var req_json = JSON.stringify(req_data);
+        $.ajax({
+            url: '/api/v1.0/users',
+            type: 'post',
+            data: req_json,
+            // contentType: "application/json",
+            dataType: 'json',
+            headers: {
+                "contentType": "application/json",
+                "X-CSRFToken": getCookie("csrf_token")
+            },//请求头，将csrf_token放到请求头中，方便后端csrf进行校验
+            success: function (data) {
+                if (data.errno == "0") {
+                    // 注册成功，跳转到主页
+                    location.href = "/index.html";
+                } else {
+                    alert(data.errmsg);
+                }
+            }
+        })
     });
-})
+});
