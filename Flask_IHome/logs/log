@@ -3009,3 +3009,42 @@ INFO _internal.py:122  * Debugger PIN: 294-544-179
 INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:02:26] "GET /api/v1.0/users HTTP/1.1" 200 -
 INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:02:27] "GET /api/v1.0/users HTTP/1.1" 200 -
 INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:02:29] "GET /api/v1.0/users HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:21:17] "POST /api/v1.0/areas HTTP/1.1" 405 -
+INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:21:22] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:23:17] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:42:03] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:43:52] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:44:13] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [12/Nov/2019 21:44:30] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179

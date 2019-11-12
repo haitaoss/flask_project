@@ -1,6 +1,7 @@
 from ihome import db
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
+from ihome import constants
 
 
 class BaseModel(object):
@@ -50,7 +51,6 @@ class User(BaseModel, db.Model):
         # 对密码进行加密
         self.password_hash = generate_password_hash(value)
 
-
     def check_password(self, passwd):
         """
         检验密码的正确性
@@ -58,6 +58,17 @@ class User(BaseModel, db.Model):
         :return: 正确返回True,错误返回False
         """
         return check_password_hash(self.password_hash, passwd)
+
+    def to_dict(self):
+        """将对象转换为字典数据"""
+        user_dict = {
+            "user_id": self.id,
+            "name": self.name,
+            "mobile": self.mobile,
+            "avatar": constants.QINIU_URL_DOMAIN + self.avatar_url if self.avatar_url else "",
+            "create_time": self.create_time.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        return user_dict
 
 
 class Area(BaseModel, db.Model):
@@ -68,6 +79,14 @@ class Area(BaseModel, db.Model):
     id = db.Column(db.Integer, primary_key=True)  # 区域编号
     name = db.Column(db.String(32), nullable=False)  # 区域名字
     houses = db.relationship("House", backref="area")  # 区域的房屋
+
+    def to_dic(self):
+        """将对象转换为字典"""
+        d = {
+            "aid": self.id,
+            "aname": self.name,
+        }
+        return d
 
 
 # 房屋设施表，建立房屋与设施的多对多关系
