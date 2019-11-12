@@ -147,10 +147,10 @@ $(document).ready(function () {
             url: '/api/v1.0/users',
             type: 'post',
             data: req_json,
-            // contentType: "application/json",
+            // contentType: "application/json", 后期会变成Content-Type
             dataType: 'json',
             headers: {
-                "contentType": "application/json",
+                "Content-Type": "application/json",
                 "X-CSRFToken": getCookie("csrf_token")
             },//请求头，将csrf_token放到请求头中，方便后端csrf进行校验
             success: function (data) {

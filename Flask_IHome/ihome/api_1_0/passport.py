@@ -20,6 +20,8 @@ def register():
     """
     # 获取请求的json数据，返回字典
     req_dict = request.get_json()
+    if not req_dict:
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不完整")
     mobile = req_dict.get("mobile")
     sms_code = req_dict.get("sms_code")
     password = req_dict.get("password")
