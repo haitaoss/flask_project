@@ -2,6 +2,7 @@ from . import api
 from ihome.utils.commons import login_require
 from ihome.utils.response_code import RET
 from ihome.utils.image_storage import storage
+from ihome.utils.image_storage_fdfs import upload_image
 from ihome.models import User
 from ihome import db, constants
 
@@ -30,7 +31,9 @@ def set_user_avatar():
 
     # 调用七牛上传图片，返回文件名
     try:
-        file_name = storage(image_data)
+        # file_name = storage(image_data)
+        file_name = upload_image(image_data)
+        print("*" * 10, file_name)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.THIRDERR, errmsg="上传失败")

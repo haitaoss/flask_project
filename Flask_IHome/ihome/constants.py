@@ -15,7 +15,11 @@ LOGIN_ERROR_MAX_TIMES = 5
 LOGIN_ERROR_FORBID_TIME = 600
 
 # 七牛的域名
-QINIU_URL_DOMAIN = "http://"
+# QINIU_URL_DOMAIN = "http://"
+QINIU_URL_DOMAIN = "http://192.168.205.148:8888/"
 
 # 城区信息的缓存时间,单位：秒
 AREA_INFO_REDIS_CACHE_EXPIRES = 7200
+
+# fdfs配置文件的路径
+FDFS_CLIENT_CONFIG_PATH = "/ihome/utils/client.conf"

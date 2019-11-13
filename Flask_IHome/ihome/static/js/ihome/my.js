@@ -3,38 +3,37 @@ function getCookie(name) {
     return r ? r[1] : undefined;
 }
 
+// 点击推出按钮时执行的函数
 function logout() {
     $.ajax({
-        url: '/api/v1.0/session',
+        url: "/api/v1.0/session",
         type: "delete",
-        dataType: "json",
         headers: {
             "X-CSRFToken": getCookie("csrf_token")
         },
-        success: function (data) {
-            if ("0" == data.errno) {
-                location.href = '/index.html';
+        dataType: "json",
+        success: function (resp) {
+            if ("0" == resp.errno) {
+                location.href = "/index.html";
             }
         }
-    })
+    });
 }
 
-$(function () {
-    // 访问接口获取用户的信息
-    $.ajax({
-        url: "/api/v1.0/users",
-        type: "get",
-        dataType: "json",
-        success: function (data) {
-            if (data.errno == 0) {
-                // 获取成功设置，用户信息到页面中
-                $("#user-avatar").attr("src", data.data.user.avatar_url);
-                $("#user-name").html(data.data.user.name);
-                $("#user-mobile").html(data.data.user.mobile);
-                 return;
+$(document).ready(function(){
+    $.get("/api/v1.0/user", function(resp){
+        // 用户未登录
+        if ("4101" == resp.errno) {
+            location.href = "/login.html";
+        }
+        // 查询到了用户的信息
+        else if ("0" == resp.errno) {
+            $("#user-name").html(resp.data.name);
+            $("#user-mobile").html(resp.data.mobile);
+            if (resp.data.avatar) {
+                $("#user-avatar").attr("src", resp.data.avatar);
             }
-            alert(data.errmsg);
 
         }
-    })
-});
+    }, "json");
+})
