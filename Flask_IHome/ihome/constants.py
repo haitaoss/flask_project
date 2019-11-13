@@ -23,3 +23,6 @@ AREA_INFO_REDIS_CACHE_EXPIRES = 7200
 
 # fdfs配置文件的路径
 FDFS_CLIENT_CONFIG_PATH = "/ihome/utils/client.conf"
+
+# 房屋列表页面，每页数据容量
+HOUSE_LIST_PAGE_CAPACITY = 2

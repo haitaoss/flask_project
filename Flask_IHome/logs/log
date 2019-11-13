@@ -3649,3 +3649,138 @@ INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:56:15] "POST /api/v1.0/h
 INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:56:47] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
 INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:56:56] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
 INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:57:12] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/verify_code.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/verify_code.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/tasks/task_sms.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:02:59] "GET /myhouse.html HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:02:59] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:00] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:01] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:01] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:02] "GET / HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:02] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:03] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:03] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:05] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:06] "DELETE /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:06] "GET /index.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:06] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:06] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:07] "GET /register.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:07] "GET /static/css/ihome/register.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:07] "GET /static/js/ihome/register.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:07] "GET /api/v1.0/image_codes/de62590b-18bb-494a-aa22-317ac659d268 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:33] "GET /api/v1.0/sms_codes/18389356432?id=&image_code=efzo&image_code_id=de62590b-18bb-494a-aa22-317ac659d268 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 17:03:34] "GET /api/v1.0/image_codes/fccc3fa8-855a-41c2-93bd-7036d13e9cb3 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/models.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+ERROR houses.py:249 object of type 'NoneType' has no len()
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:56:05] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:58:11] "GET /api/v1.0/houses/ HTTP/1.1" 404 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR houses.py:311 (pymysql.err.InternalError) (1054, "Unknown column 'ih_order_info.create_time' in 'order clause'")
+[SQL: SELECT ih_house_info.create_time AS ih_house_info_create_time, ih_house_info.update_time AS ih_house_info_update_time, ih_house_info.id AS ih_house_info_id, ih_house_info.user_id AS ih_house_info_user_id, ih_house_info.area_id AS ih_house_info_area_id, ih_house_info.title AS ih_house_info_title, ih_house_info.price AS ih_house_info_price, ih_house_info.address AS ih_house_info_address, ih_house_info.room_count AS ih_house_info_room_count, ih_house_info.acreage AS ih_house_info_acreage, ih_house_info.unit AS ih_house_info_unit, ih_house_info.capacity AS ih_house_info_capacity, ih_house_info.beds AS ih_house_info_beds, ih_house_info.deposit AS ih_house_info_deposit, ih_house_info.min_days AS ih_house_info_min_days, ih_house_info.max_days AS ih_house_info_max_days, ih_house_info.order_count AS ih_house_info_order_count, ih_house_info.index_image_url AS ih_house_info_index_image_url 
+FROM ih_house_info ORDER BY ih_order_info.create_time DESC 
+ LIMIT %(param_1)s, %(param_2)s]
+[parameters: {'param_2': 1, 'param_1': 0}]
+(Background on this error at: http://sqlalche.me/e/2j85)
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:58:16] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR houses.py:311 (pymysql.err.InternalError) (1054, "Unknown column 'ih_order_info.create_time' in 'order clause'")
+[SQL: SELECT ih_house_info.create_time AS ih_house_info_create_time, ih_house_info.update_time AS ih_house_info_update_time, ih_house_info.id AS ih_house_info_id, ih_house_info.user_id AS ih_house_info_user_id, ih_house_info.area_id AS ih_house_info_area_id, ih_house_info.title AS ih_house_info_title, ih_house_info.price AS ih_house_info_price, ih_house_info.address AS ih_house_info_address, ih_house_info.room_count AS ih_house_info_room_count, ih_house_info.acreage AS ih_house_info_acreage, ih_house_info.unit AS ih_house_info_unit, ih_house_info.capacity AS ih_house_info_capacity, ih_house_info.beds AS ih_house_info_beds, ih_house_info.deposit AS ih_house_info_deposit, ih_house_info.min_days AS ih_house_info_min_days, ih_house_info.max_days AS ih_house_info_max_days, ih_house_info.order_count AS ih_house_info_order_count, ih_house_info.index_image_url AS ih_house_info_index_image_url 
+FROM ih_house_info ORDER BY ih_order_info.create_time DESC 
+ LIMIT %(param_1)s, %(param_2)s]
+[parameters: {'param_1': 0, 'param_2': 1}]
+(Background on this error at: http://sqlalche.me/e/2j85)
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:58:57] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:21] "GET /login.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:21] "GET /static/css/ihome/login.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:21] "GET /static/js/ihome/login.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:28] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:28] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:28] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:31] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 19:59:34] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:00:05] "POST /api/v1.0/houses/info HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:00:09] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:00:20] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:00:36] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:00:37] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:00:57] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:01:17] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:01:45] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:02] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:16] "GET /newhouse.html HTTP/1.1" 304 -
+INFO houses.py:25 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:16] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:16] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /newhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/css/ihome/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/css/ihome/newhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/js/ihome/newhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO houses.py:25 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:22] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:02:54] "POST /api/v1.0/houses/info HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:03:00] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:03:08] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:03:39] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:03:44] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:04:05] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:06:13] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/constants.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:06:36] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:07:09] "GET /api/v1.0/houses?sk=price-inc HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:07:32] "GET /api/v1.0/houses?sk=price-inc HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:07:42] "GET /api/v1.0/houses?sk=price-inc&p=2 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 20:07:58] "GET /api/v1.0/houses?sk=price-inc&p=10 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
