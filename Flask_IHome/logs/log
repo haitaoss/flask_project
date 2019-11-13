@@ -3323,3 +3323,329 @@ INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 09:02:07] "POST /api/v1.0/u
 INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 09:02:12] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
 INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 09:02:17] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
 INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 09:02:19] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/profile.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:15] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/css/ihome/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/css/ihome/index.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/js/template.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/js/ihome/index.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/images/logo@128x59.png HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/images/home01.jpg HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/images/home02.jpg HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/images/home03.jpg HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:16] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:18] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:18] "GET /my.html HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:18] "GET /static/css/ihome/my.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:19] "GET /static/js/ihome/my.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:19] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:20] "GET /static/js/jquery.form.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:20] "GET /api/v1.0/user HTTP/1.1" 200 -
+ERROR profile.py:37 "Please check your BUCKET_NAME! The UpHosts is {'error': 'no such bucket'}"
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:38:26] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/utils/image_storage.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:39:26] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:39:29] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:39:31] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/constants.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:26] "GET /profile.html HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:26] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:26] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:29] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:31] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:35] "POST /api/v1.0/users/avatar HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:40] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:41] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:40:41] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /my.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/css/ihome/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/css/ihome/my.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/js/ihome/my.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /login.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:28] "GET /static/css/ihome/login.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:29] "GET /static/js/ihome/login.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:29] "GET /static/images/logo@128x59.png HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:31] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "GET /index.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "GET /static/css/ihome/index.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "GET /static/images/home01.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:34] "GET /static/images/home02.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:35] "GET /static/js/ihome/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:35] "GET /static/images/home03.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:35] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:35] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:36] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:38] "GET /myhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:38] "GET /static/css/ihome/myhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:38] "GET /static/js/ihome/myhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:40] "GET /newhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:40] "GET /static/css/ihome/newhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:40] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:40] "GET /static/js/ihome/newhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:57:40] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /newhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/css/ihome/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/css/ihome/newhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/js/ihome/newhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:20] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:21] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 13:59:21] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 14:03:30] "GET /myhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 14:03:30] "GET /static/css/ihome/myhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 14:03:31] "GET /static/js/ihome/myhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 14:03:31] "GET /static/images/home01.jpg HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 14:04:21] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:42:35] "GET /newhouse.html HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:42:36] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:42:36] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:42:45] "GET /newhouse.html HTTP/1.1" 304 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:42:45] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:42:45] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /newhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/css/ihome/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/css/ihome/newhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/js/ihome/newhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:02] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:03] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:03] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:13] "GET /newhouse.html HTTP/1.1" 304 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:13] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:43:13] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:30] "POST /api/v1.0/houses/info HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:30] "GET /login.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:30] "GET /static/css/ihome/login.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:30] "GET /static/js/ihome/login.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:30] "GET /static/images/logo@128x59.png HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "POST /api/v1.0/sessions HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /index.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/css/ihome/index.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/images/home01.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/js/ihome/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/images/home03.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:39] "GET /static/images/home02.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:42] "GET /my.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:42] "GET /static/css/ihome/my.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:42] "GET /static/js/ihome/my.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:42] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:45] "GET /myhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:45] "GET /static/css/ihome/myhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:45] "GET /static/js/ihome/myhouse.js HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:44:45] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:45:28] "POST /api/v1.0/houses/info HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:45:38] "POST /api/v1.0/houses/info HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:07] "GET /newhouse.html HTTP/1.1" 304 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:07] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:07] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:18] "GET /newhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:18] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:18] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:18] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:18] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:18] "GET /static/css/ihome/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:18] "GET /static/css/ihome/newhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/js/ihome/newhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:19] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /newhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/css/ihome/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/css/ihome/newhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/js/ihome/newhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:29] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:30] "GET /newhouse.html HTTP/1.1" 304 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:30] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:30] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:45] "GET /newhouse.html HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:45] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:45] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:55] "GET /newhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/css/ihome/main.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/css/ihome/newhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/js/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/js/jquery.form.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/js/template.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/js/ihome/newhouse.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:47:56] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/css/ihome/index.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/images/home01.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/images/logo@128x59.png HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/js/ihome/index.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/images/home02.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:07] "GET /static/images/home03.jpg HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:08] "GET /my.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:08] "GET /static/css/ihome/my.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:08] "GET /static/js/ihome/my.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:08] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:17] "GET /myhouse.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:17] "GET /static/css/ihome/myhouse.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:17] "GET /static/js/ihome/myhouse.js HTTP/1.1" 200 -
+INFO houses.py:24 从redis中获取到缓存数据 area_info
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:48:18] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:49:11] "POST /api/v1.0/houses/info HTTP/1.1" 500 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:50:26] "POST /api/v1.0/houses/info HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:51:33] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:51:40] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:52:03] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:52:17] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:53:22] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:53:35] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:54:24] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:54:30] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:56:15] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:56:47] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:56:56] "POST /api/v1.0/houses/image HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [13/Nov/2019 15:57:12] "POST /api/v1.0/houses/image HTTP/1.1" 200 -

@@ -19,7 +19,7 @@ def storage(file_data):
     q = Auth(access_key, secret_key)
 
     # 要上传的空间
-    bucket_name = 'ihome'
+    bucket_name = 'ss-flask-ihome'
 
     # 生成上传 Token，可以指定过期时间等
     token = q.upload_token(bucket_name, None, 3600)  # 不取名字就设置成None
