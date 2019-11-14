@@ -171,5 +171,7 @@ def logout():
     # 因为，浏览器访问的时候，会把cookie都传送过来
     # 这个时候，我们就获取了这个浏览器对应的session_id，
     # 所以这里的clear是清除这个sessin_id的信息，不会把别人的清除掉
+    csrf_token = session.get("csrf_token")  # 先获取出来
     session.clear()
+    session['csrf_token'] = csrf_token  # 在设置回去
     return jsonify(errno=RET.OK, errmsg="OK")
