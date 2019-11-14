@@ -1,5 +1,7 @@
-from ihome import db
+# -*- coding:utf-8 -*-
+
 from datetime import datetime
+from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
 from ihome import constants
 
@@ -26,36 +28,34 @@ class User(BaseModel, db.Model):
     houses = db.relationship("House", backref="user")  # 用户发布的房屋
     orders = db.relationship("Order", backref="user")  # 用户下的订单
 
-    # user.password   user.password="xxx" 会调用下面的两个装饰器函数
-
-    # 加上property装饰器后，会把函数变为属性，属性名为函数名
-    @property  # 把方法当成属性来使用
+    # 加上property装饰器后，会把函数变为属性，属性名即为函数名
+    @property
     def password(self):
         """读取属性的函数行为"""
-        # print(user.password)  读取属性时会被调用
-        # 函数的返回值，会作为属性值
-        # return "xxx"
-        # 因为读取出来的是加密之后的东西，拿来没有任何意义，所以就别读取了
+        # print(user.password)  # 读取属性时被调用
+        # 函数的返回值会作为属性值
+        # return "xxxx"
         raise AttributeError("这个属性只能设置，不能读取")
 
-    # 给我们的password属性添加设置属性的方法，所以先使用@property创建出是函数的属性
-    # 使用这个装饰器，对应设置属性的操作
+    # 使用这个装饰器, 对应设置属性操作
     @password.setter
     def password(self, value):
         """
-        设置属性 usre.password = "xxx"
-        :param value: 设置属性时的数据 value 就是”xxx“,原始的明文密码
+        设置属性  user.passord = "xxxxx"
+        :param value: 设置属性时的数据 value就是"xxxxx", 原始的明文密码
         :return:
         """
-        """设置属性的函数行为"""
-        # 对密码进行加密
         self.password_hash = generate_password_hash(value)
+
+    # def generate_password_hash(self, origin_password):
+    #     """对密码进行加密"""
+    #     self.password_hash = generate_password_hash(origin_password)
 
     def check_password(self, passwd):
         """
         检验密码的正确性
-        :param passwd: 用户登录时填写的原始密码
-        :return: 正确返回True,错误返回False
+        :param passwd:  用户登录时填写的原始密码
+        :return: 如果正确，返回True， 否则返回False
         """
         return check_password_hash(self.password_hash, passwd)
 
@@ -89,22 +89,18 @@ class Area(BaseModel, db.Model):
     name = db.Column(db.String(32), nullable=False)  # 区域名字
     houses = db.relationship("House", backref="area")  # 区域的房屋
 
-    def to_dic(self):
+    def to_dict(self):
         """将对象转换为字典"""
         d = {
             "aid": self.id,
-            "aname": self.name,
+            "aname": self.name
         }
         return d
 
 
 # 房屋设施表，建立房屋与设施的多对多关系
-# 这是使用最原始的方式，创建表，也就是锁这个表没有对应的模型类
-# 因为没必要，
 house_facility = db.Table(
     "ih_house_facility",
-    # 如果设置两个主键，mysql就知道以两个主键的值作为唯一的标识符。
-    # 就是不可能2 2,2 2。这是不允许的
     db.Column("house_id", db.Integer, db.ForeignKey("ih_house_info.id"), primary_key=True),  # 房屋编号
     db.Column("facility_id", db.Integer, db.ForeignKey("ih_facility_info.id"), primary_key=True)  # 设施编号
 )
@@ -131,13 +127,10 @@ class House(BaseModel, db.Model):
     max_days = db.Column(db.Integer, default=0)  # 最多入住天数，0表示不限制
     order_count = db.Column(db.Integer, default=0)  # 预订完成的该房屋的订单数
     index_image_url = db.Column(db.String(256), default="")  # 房屋主图片的路径
-
-    # secondary 指明过滤表是哪个
     facilities = db.relationship("Facility", secondary=house_facility)  # 房屋的设施
     images = db.relationship("HouseImage")  # 房屋的图片
     orders = db.relationship("Order", backref="house")  # 房屋的订单
 
-    # 工具方法
     def to_basic_dict(self):
         """将基本信息转换为字典数据"""
         house_dict = {
@@ -188,7 +181,7 @@ class House(BaseModel, db.Model):
 
         # 评论信息
         comments = []
-        orders = Order.query.filter(Order.house_id == self.id, Order.status == "COMPLETE", Order.comment != None) \
+        orders = Order.query.filter(Order.house_id == self.id, Order.status == "COMPLETE", Order.comment != None)\
             .order_by(Order.update_time.desc()).limit(constants.HOUSE_DETAIL_COMMENT_DISPLAY_COUNTS)
         for order in orders:
             comment = {
@@ -234,7 +227,7 @@ class Order(BaseModel, db.Model):
     house_price = db.Column(db.Integer, nullable=False)  # 房屋的单价
     amount = db.Column(db.Integer, nullable=False)  # 订单的总金额
     status = db.Column(  # 订单的状态
-        db.Enum(
+        db.Enum(   # 枚举     # django choice
             "WAIT_ACCEPT",  # 待接单,
             "WAIT_PAYMENT",  # 待支付
             "PAID",  # 已支付
@@ -243,5 +236,22 @@ class Order(BaseModel, db.Model):
             "CANCELED",  # 已取消
             "REJECTED"  # 已拒单
         ),
-        default="WAIT_ACCEPT", index=True)
+        default="WAIT_ACCEPT", index=True)    # 指明在mysql中这个字段建立索引，加快查询速度
     comment = db.Column(db.Text)  # 订单的评论信息或者拒单原因
+    trade_no = db.Column(db.String(80))  # 交易的流水号 支付宝的
+
+    def to_dict(self):
+        """将订单信息转换为字典数据"""
+        order_dict = {
+            "order_id": self.id,
+            "title": self.house.title,
+            "img_url": constants.QINIU_URL_DOMAIN + self.house.index_image_url if self.house.index_image_url else "",
+            "start_date": self.begin_date.strftime("%Y-%m-%d"),
+            "end_date": self.end_date.strftime("%Y-%m-%d"),
+            "ctime": self.create_time.strftime("%Y-%m-%d %H:%M:%S"),
+            "days": self.days,
+            "amount": self.amount,
+            "status": self.status,
+            "comment": self.comment if self.comment else ""
+        }
+        return order_dict

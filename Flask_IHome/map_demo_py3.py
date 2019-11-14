@@ -11,3 +11,4 @@ ret = map(add, li1, li2)
 print(ret)  # python2 返回的是list，python3返回的是map类型
 
 print(list(ret))
+
