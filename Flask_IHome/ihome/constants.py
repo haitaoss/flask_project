@@ -26,3 +26,6 @@ FDFS_CLIENT_CONFIG_PATH = "/ihome/utils/client.conf"
 
 # 房屋列表页面，每页数据容量
 HOUSE_LIST_PAGE_CAPACITY = 2
+
+# 房屋列表页面页数缓存时间，单位秒
+HOUSE_LIST_PAGE_REDIS_CACHE_EXPIRES = 7200

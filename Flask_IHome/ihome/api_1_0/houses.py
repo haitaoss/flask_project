@@ -222,11 +222,11 @@ def save_house_image():
 @api.route('/houses')
 def get_house_list():
     """获取房屋的列表信息（搜索页面）"""
-    begin_date = request.args.get("sd")  # 用户想要的起始时间
-    end_date = request.args.get("ed")  # 用户想要的结束时间
-    area_id = request.args.get("aid")  # 区域id
+    begin_date = request.args.get("sd", "")  # 用户想要的起始时间
+    end_date = request.args.get("ed", "")  # 用户想要的结束时间
+    area_id = request.args.get("aid", "")  # 区域id
     sort_key = request.args.get("sk", "new")  # 排序关键字
-    page = request.args.get("p")  # 页数
+    page = request.args.get("p", "")  # 页数
 
     # 处理时间
     try:
@@ -245,7 +245,7 @@ def get_house_list():
     # 判断区域id
     if area_id:
         try:
-            area = Area.query.get(area_id)  # 这里主要是判断数据格式的问题，
+            Area.query.get(area_id)  # 这里主要是判断数据格式的问题，
         except Exception as e:
             current_app.logger.error(e)
             return jsonify(errno=RET.DBERR, errmsg="区域参数有误")
@@ -256,6 +256,19 @@ def get_house_list():
     except Exception as e:
         current_app.logger.error(e)
         page = 1
+    if page <= 0:
+        page = 1
+
+    # 从缓存中获取数据
+    redis_key = "house_%s_%s_%s_%s" % (begin_date, end_date, area_id, sort_key)
+    try:
+        resp_json = redis_store.hget(redis_key, page)
+    except Exception as e:
+        current_app.logger.error(e)
+    else:
+        if resp_json:
+            current_app.logger.info("从redis中获取到缓存数据 house_%s_%s_%s_%s")
+            return resp_json, 200, {"Content-Type": "application/json"}
 
     # 过滤条件的参数列表容器
     filter_params = []
@@ -321,12 +334,35 @@ def get_house_list():
     # 获取总页数
     total_page = page_obj.pages
 
+    # 将数据变成json字符串
+    resp_dict = dict(errno=RET.OK,
+                     errmsg="OK",
+                     data={
+                         "total_page": total_page,
+                         "houses": houses,
+                         "current_page": page
+                     })
+    resp_json = json.dumps(resp_dict)
+    # 将数据存入redis缓存
+    if page <= total_page:
+        redis_key = "house_%s_%s_%s_%s" % (begin_date, end_date, area_id, sort_key)
+        try:
+            # redis_store.hset(redis_key, page, resp_json)
+            # redis_store.expire(redis_store, constants.HOUSE_LIST_PAGE_REDIS_CACHE_EXPIRES)
+            # 创建redis管道对象，可以一次执行多个语句
+            pipeline = redis_store.pipeline()
+
+            # 开启多个语句的记录
+            pipeline.multi()
+
+            # 向管道添加待执行的语句
+            pipeline.hset(redis_key, page, resp_json)
+            pipeline.expire(redis_key, constants.HOUSE_LIST_PAGE_REDIS_CACHE_EXPIRES)
+
+            # 执行语句
+            pipeline.execute()
+        except Exception as e:
+            current_app.logger.error(e)
+
     # 响应
-    return jsonify(errno=RET.OK,
-                   errmsg="OK",
-                   data={
-                       "total_page": total_page,
-                       "houses": houses,
-                       "current_page": page
-                   }
-                   )
+    return resp_json, 200, {"Content-Type": "application/json"}

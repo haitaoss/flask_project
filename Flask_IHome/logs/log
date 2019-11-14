@@ -3784,3 +3784,111 @@ INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/
 INFO _internal.py:122  * Restarting with stat
 WARNING _internal.py:122  * Debugger is active!
 INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR houses.py:365 Invalid input of type: 'Redis'. Convert to a byte, string or number first.
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:41:13] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR houses.py:365 Invalid input of type: 'Redis'. Convert to a byte, string or number first.
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:41:26] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR houses.py:365 Invalid input of type: 'Redis'. Convert to a byte, string or number first.
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:41:32] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR houses.py:365 Invalid input of type: 'Redis'. Convert to a byte, string or number first.
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:42:26] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:43:37] "GET /api/v1.0/houses?sk=price-inc&p=4 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:43:45] "GET /api/v1.0/houses?sk=price-inc&p=4 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:43:51] "GET /api/v1.0/houses?sk=price-inc&p=4 HTTP/1.1" 200 -
+ERROR houses.py:365 Invalid input of type: 'Redis'. Convert to a byte, string or number first.
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:44:05] "GET /api/v1.0/houses?sk=price-inc&p=2 HTTP/1.1" 200 -
+ERROR houses.py:365 Invalid input of type: 'Redis'. Convert to a byte, string or number first.
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:44:15] "GET /api/v1.0/houses?sk=price-inc&p=2 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122  * Running on http://192.168.205.148:8080/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:45:20] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO houses.py:270 从redis中获取到缓存数据 house_%s_%s_%s_%s
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:45:22] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO houses.py:270 从redis中获取到缓存数据 house_%s_%s_%s_%s
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:45:24] "GET /api/v1.0/houses HTTP/1.1" 200 -
+ERROR houses.py:257 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO houses.py:270 从redis中获取到缓存数据 house_%s_%s_%s_%s
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:45:30] "GET /api/v1.0/houses HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:45:39] "GET /api/v1.0/houses?p=4 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:45:41] "GET /api/v1.0/houses?p=4 HTTP/1.1" 200 -
+INFO _internal.py:122  * Detected change in '/home/haitao/Desktop/flask_project/Flask_IHome/ihome/api_1_0/houses.py', reloading
+INFO _internal.py:122  * Restarting with stat
+WARNING _internal.py:122  * Debugger is active!
+INFO _internal.py:122  * Debugger PIN: 294-544-179
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET / HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/css/reset.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/swiper/css/swiper.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/css/ihome/main.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/css/ihome/index.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/js/jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/js/template.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/js/ihome/index.js HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/images/logo@128x59.png HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/images/home01.jpg HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/images/home02.jpg HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/images/home03.jpg HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:02] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:05] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:05] "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:09] "GET /my.html HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:09] "GET /static/css/ihome/my.css HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:09] "GET /static/js/ihome/my.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:09] "GET /api/v1.0/user HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:11] "GET /api/v1.0/session HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:11] "GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1" 404 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:15] "GET /search.html?aid=&aname=&sd=&ed= HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:15] "GET /static/css/ihome/search.css HTTP/1.1" 304 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:15] "GET /static/js/ihome/search.js HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:15] "GET /api/v1.0/areas HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:15] "GET /api/v1.0/houses?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:16] "GET /api/v1.0/houses?aid=&sd=&ed=&sk=new&p=2 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:16] "GET /api/v1.0/houses?aid=&sd=&ed=&sk=new&p=3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:26] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=new&p=1 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:26] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=new&p=2 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:27] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=new&p=3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:32] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=price-inc&p=1 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:32] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=price-inc&p=2 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:32] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=price-inc&p=3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:37] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=price-des&p=1 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:38] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=price-des&p=2 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:38] "GET /api/v1.0/houses?aid=1&sd=&ed=&sk=price-des&p=3 HTTP/1.1" 200 -
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:43] "GET /api/v1.0/houses?aid=3&sd=&ed=&sk=price-des&p=1 HTTP/1.1" 200 -
+ERROR houses.py:242 
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:48] "GET /api/v1.0/houses?aid=3&sd=2019-11-14&ed=2019-11-14&sk=price-des&p=1 HTTP/1.1" 200 -
+ERROR houses.py:242 
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:47:55] "GET /api/v1.0/houses?aid=1&sd=2019-11-14&ed=2019-11-14&sk=price-des&p=1 HTTP/1.1" 200 -
+ERROR houses.py:295 'BaseQuery' object is not callable
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:48:07] "GET /api/v1.0/houses?aid=1&sd=2019-11-14&ed=2019-11-16&sk=price-des&p=1 HTTP/1.1" 200 -
+ERROR houses.py:242 
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:48:24] "GET /api/v1.0/houses?aid=1&sd=2019-11-18&ed=2019-11-18&sk=price-des&p=1 HTTP/1.1" 200 -
+ERROR houses.py:295 'BaseQuery' object is not callable
+INFO _internal.py:122 192.168.205.1 - - [14/Nov/2019 09:48:29] "GET /api/v1.0/houses?aid=1&sd=2019-11-14&ed=2019-11-18&sk=price-des&p=1 HTTP/1.1" 200 -
